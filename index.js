@@ -20,7 +20,7 @@ app.get('/',(req,res) =>{
     res.status(200).send(`<h1>SPS RECORD</h1>`)
 })
 
-const port = process.env.PORT;
+const port = 4000;
 
 app.listen(port, async ()=>{
      console.log(`App is running on Port ${port}`);

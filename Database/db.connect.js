@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const dbConnect = process.env.POSTGRESQL_CONNECTION_STRING;
+const dbConnect = 'postgres://postgres:CHANDRAPREMA10@localhost:5432/sps_game'; 
 
 const sequelize = new Sequelize(dbConnect, {
     dialect: 'postgres',
